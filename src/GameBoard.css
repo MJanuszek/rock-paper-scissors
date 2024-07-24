@@ -1,0 +1,23 @@
+.container {
+  min-height: 30vh;
+  min-width: 60vw;
+  border: 2px solid black;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid yellow;
+}
+
+.icon {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  padding: 20px;
+}
+
+.rock {
+  background-image: url("./img/fist.png");
+}
