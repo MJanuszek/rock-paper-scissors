@@ -1,23 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 .container {
   min-height: 30vh;
   min-width: 60vw;
-  border: 2px solid black;
+  padding: 30px;
+  border: 2px solid #ff5959;
+  background-color: #49beb7;
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
-  border: 2px solid yellow;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-around;
 }
 
 .icon {
-  border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  background-color: #fff;
+  border: 4px solid #facf5a;
+  height: 140px;
+  width: 140px;
   background-size: contain;
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .rock {
   background-image: url("./img/fist.png");
+}
+.paper {
+  background-image: url("./img/hello.png");
+}
+.scissors {
+  background-image: url("./img/scissor.png");
 }

@@ -11,6 +11,11 @@ function GameBoard() {
         <div className="icon paper"></div>
         <div className="icon scissors"></div>
       </div>
+      <div className="labels">
+        <div className="label">Rock</div>
+        <div className="label">Paper</div>
+        <div className="label">Scissors</div>
+      </div>
     </div>
   );
 }
