@@ -10,6 +10,9 @@ function GameBoard() {
   function startNewGame() {
     setPlayer1Hand("");
     setPlayer2Hand("");
+    setoponentWins(0);
+    setplayerWins(0);
+    setWinner("");
   }
 
   function oponentChoice() {
@@ -83,6 +86,7 @@ function GameBoard() {
       <button className="restart" onClick={startNewGame}>
         Start new game
       </button>
+      <p className="info">Scores will reset</p>
     </div>
   );
 }

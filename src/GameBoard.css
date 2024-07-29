@@ -75,7 +75,10 @@
   padding: 22px;
   border-radius: 12px;
 }
-
+.info {
+  font-size: 0.8em;
+  margin-left: 2vw;
+}
 .restart:hover {
   color: #000000;
 }
