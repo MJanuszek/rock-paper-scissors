@@ -4,10 +4,18 @@ import { useState } from "react";
 function GameBoard() {
   const [player1Hand, setPlayer1Hand] = useState();
   const [player2Hand, setPlayer2Hand] = useState();
+  const [nextPlayer, setNextPlayes] = useState(false);
+
+  function handlePlayerChoice(choice) {
+    console.log(choice);
+  }
   return (
     <div className="container">
       <div className="icons">
-        <div className="icon rock"></div>
+        <div
+          className="icon rock"
+          onClick={() => handlePlayerChoice("rock")}
+        ></div>
         <div className="icon paper"></div>
         <div className="icon scissors"></div>
       </div>

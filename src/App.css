@@ -10,12 +10,12 @@ body {
   /* background-image: url("assets/annie-spratt-xTaOPMa6wAE-unsplash.jpg"); */
   background-size: cover;
   font-family: "Lilita One", serif;
-  background-color: #0b7479;
+  background-color: #e0cab4;
 }
 
 .main-title {
-  font-size: 2.5em;
-  text-shadow: 12px 2px 5px rgba(11, 11, 11, 0.947);
-  color: #facf5a;
+  font-size: 2.7em;
+  text-shadow: 5px 2px 5px rgba(11, 11, 11, 0.947);
+  color: #eb4f07;
   letter-spacing: 0.1em;
 }
