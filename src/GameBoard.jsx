@@ -1,5 +1,5 @@
 import "./GameBoard.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function GameBoard() {
   const [player1Hand, setPlayer1Hand] = useState("");
@@ -23,9 +23,14 @@ function GameBoard() {
     let opponentHand = oponentChoice();
     setPlayer1Hand(choice);
     setPlayer2Hand(opponentHand);
-    console.log(player1Hand, player2Hand);
-    whoIsWinner(choice, opponentHand);
   }
+
+  useEffect(() => {
+    if (player1Hand && player2Hand) {
+      console.log(player1Hand, player2Hand);
+      whoIsWinner(player1Hand, player2Hand);
+    }
+  }, [player1Hand, player2Hand]);
 
   function whoIsWinner(player1Hand, player2Hand) {
     console.log("whoiswinner");
