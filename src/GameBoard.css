@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 
 .container {
-  min-height: 30vh;
+  min-height: 70vh;
   min-width: 60vw;
   padding: 30px;
   border: 4px solid #ff5959;
   background-color: #ebcbae;
+  border-radius: 8px;
 }
 
 .icons {
@@ -16,16 +17,25 @@
 .labels {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2vh;
+  padding: 12px;
+  border-bottom: 2px solid #ff5959;
 }
 
 .icon {
   background-color: #fff;
   border: 4px solid #000000;
+  border-radius: 22px;
   height: 140px;
   width: 140px;
   background-size: contain;
   padding: 10px;
   margin: 10px;
+}
+
+.icon:hover {
+  border: 4px solid #ec0000;
+  background-color: #fffed7d7;
 }
 
 .rock {
@@ -36,4 +46,27 @@
 }
 .scissors {
   background-image: url("./img/scissor.png");
+}
+
+.turn,
+.statistics {
+  font-family: "Lilita One", serif;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ff5959;
+  padding: 22px;
+}
+
+.restart {
+  font-size: 1.2em;
+  font-family: "Lilita One", serif;
+  margin-top: 3vh;
+  border: 2px solid #ff5959;
+  color: #ff5959;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.restart:hover {
+  color: #000000;
 }
