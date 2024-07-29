@@ -5,9 +5,8 @@ function GameBoard() {
   const [player1Hand, setPlayer1Hand] = useState("");
   const [player2Hand, setPlayer2Hand] = useState("");
   const [winner, setWinner] = useState("");
-  let oponentWins = 0;
-  let playerWins = 0;
-
+  const [oponentWins, setoponentWins] = useState(0);
+  const [playerWins, setplayerWins] = useState(0);
   function startNewGame() {
     setPlayer1Hand("");
     setPlayer2Hand("");
@@ -43,9 +42,11 @@ function GameBoard() {
       (player1Hand === "scissors" && player2Hand === "paper") ||
       (player1Hand === "paper" && player2Hand === "rock")
     ) {
-      setWinner("Player 1 wins");
+      setWinner("Player wins");
+      setplayerWins((prev) => prev + 1);
     } else {
-      setWinner("Player 2 wins");
+      setWinner("Oponent");
+      setoponentWins((prev) => prev + 1);
     }
   }
   // ----------------------------------------------------------------------

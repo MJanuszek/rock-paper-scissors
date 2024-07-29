@@ -57,6 +57,15 @@
   padding: 22px;
 }
 
+.winner {
+  font-size: 1.4em;
+  border-bottom: 2px solid #ff5959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .restart {
   font-size: 1.2em;
   font-family: "Lilita One", serif;
