@@ -1,4 +1,5 @@
 import "./GameBoard.css";
+import "./stylesMediaQ.css";
 import { useState, useEffect } from "react";
 
 function GameBoard() {
@@ -29,13 +30,11 @@ function GameBoard() {
 
   useEffect(() => {
     if (player1Hand && player2Hand) {
-      console.log(player1Hand, player2Hand);
       whoIsWinner(player1Hand, player2Hand);
     }
   }, [player1Hand, player2Hand]);
 
   function whoIsWinner(player1Hand, player2Hand) {
-    console.log("whoiswinner");
     player1Hand = player1Hand.trim();
     player2Hand = player2Hand.trim();
     if (player1Hand === player2Hand) {
