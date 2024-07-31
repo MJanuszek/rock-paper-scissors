@@ -1,9 +1,16 @@
 @media (max-width: 599px) {
+  body {
+    font-size: 0.8em;
+  }
   .icons,
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+  }
+  .icon {
+    height: 100px;
+    width: 100px;
   }
 }

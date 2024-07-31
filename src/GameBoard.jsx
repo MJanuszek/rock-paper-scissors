@@ -68,11 +68,7 @@ function GameBoard() {
           onClick={() => handlePlayerChoice("scissors")}
         ></div>
       </div>
-      <div className="labels">
-        <div className="label">Rock</div>
-        <div className="label">Paper</div>
-        <div className="label">Scissors</div>
-      </div>
+
       <div className="turn">
         <h2>Player hand: {player1Hand} </h2>
         <h2>Oponent hand: {player2Hand} </h2>
